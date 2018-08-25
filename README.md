@@ -8,6 +8,8 @@ This package allows you to create some tasks with list of steps (pipes) and exec
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 
+Forked from [tzurbaev/laravel-pipeline-tasks](https://github.com/tzurbaev/laravel-pipeline-tasks) to increase compat to Laravel 5.6.
+
 ## Requirements
 
 This package requires PHP 7.1 or higher.
@@ -17,7 +19,7 @@ This package requires PHP 7.1 or higher.
 You can install the package via composer:
 
 ``` bash
-$ composer require tzurbaev/laravel-pipeline-tasks
+$ composer require naugrim/laravel-pipeline-tasks
 ```
 
 ## Documentation
@@ -31,12 +33,12 @@ you can start your tasks via the TasksManager class:
 <?php
 
 use App\CloneGitRepositoryTask;
-use Zurbaev\PipelineTasks\TaskManager;
+use Naugrim\PipelineTasks\TaskManager;
 use Illuminate\Container\Container;
 
 $manager = new TaskManager(Container::getInstance());
 $task = new CloneGitRepositoryTask(
-    'git@github.com:tzurbaev/laravel-pipeline-tasks.git',
+    'git@github.com:naugrimm/laravel-pipeline-tasks.git',
     'master',
     '/var/git/pipeline-tasks'
 );
@@ -50,7 +52,7 @@ Or you can use `PipelineTasks` facade:
 <?php
 
 use App\CloneGitRepositoryTask;
-use Zurbaev\PipelineTasks\Facades\PipelineTasks;
+use Naugrim\PipelineTasks\Facades\PipelineTasks;
 
 $task = new CloneGitRepositoryTask(
     'git@github.com:tzurbaev/laravel-pipeline-tasks.git',
@@ -95,7 +97,7 @@ You can override `public function name()` in you pipe class:
 namespace App\Pipes;
 
 use App\CloneGitRepositoryTask;
-use Zurbaev\PipelineTasks\Pipe;
+use Naugrim\PipelineTasks\Pipe;
 
 class CloneGitRepository extends Pipe
 {
@@ -120,8 +122,8 @@ Now results will be stored as `clone-git-branch-master` instead of `CloneGitRepo
 
 ### Events
 
-`TaskManager` fires two events: `Zurbaev\PipelineTasks\Events\PipelineTaskCompleted` in case of successful task execution
-and `Zurbaev\PipelineTasks\Events\PipelineTaskFailed` in case of failure.
+`TaskManager` fires two events: `Naugrim\PipelineTasks\Events\PipelineTaskCompleted` in case of successful task execution
+and `Naugrim\PipelineTasks\Events\PipelineTaskFailed` in case of failure.
 
 `PipelineTaskCompleted` instance contains `public $task` property, so you can access it in your listeners.
 `PipelineTaskFailed` in addition to the `public $task` property provides `public $exception` for identification what exact pipe caused failure.
@@ -130,7 +132,7 @@ and `Zurbaev\PipelineTasks\Events\PipelineTaskFailed` in case of failure.
 
 If something went wrong during task execution, you can detect it via `failed` method on your task class or via listening to the `PipelineTaskFailed` event.
 
-`failed` method accepts `Zurbaev\PipelineTasks\Exceptions\PipelineTaskFailedException` instance as first argument, so you can inspect it.
+`failed` method accepts `Naugrim\PipelineTasks\Exceptions\PipelineTaskFailedException` instance as first argument, so you can inspect it.
 
 You can use `$e->getPipeName()` method to get the failed pipe's name.
 

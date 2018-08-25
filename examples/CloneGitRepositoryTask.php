@@ -4,8 +4,8 @@ namespace App;
 
 use App\Pipes\CloneGitRepository;
 use App\Pipes\SetupGitDirectory;
-use Zurbaev\PipelineTasks\Exceptions\PipelineTaskFailedException;
-use Zurbaev\PipelineTasks\Task;
+use Naugrim\PipelineTasks\Exceptions\PipelineTaskFailedException;
+use Naugrim\PipelineTasks\Task;
 
 class CloneGitRepositoryTask extends Task
 {

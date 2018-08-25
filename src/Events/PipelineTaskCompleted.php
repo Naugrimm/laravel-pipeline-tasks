@@ -1,8 +1,8 @@
 <?php
 
-namespace Zurbaev\PipelineTasks\Events;
+namespace Naugrim\PipelineTasks\Events;
 
-use Zurbaev\PipelineTasks\Task;
+use Naugrim\PipelineTasks\Task;
 
 class PipelineTaskCompleted
 {

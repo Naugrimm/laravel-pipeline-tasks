@@ -1,17 +1,17 @@
 <?php
 
-namespace Zurbaev\PipelineTasks\Tests;
+namespace Naugrim\PipelineTasks\Tests;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Events\Dispatcher;
-use Zurbaev\PipelineTasks\Events\PipelineTaskCompleted;
-use Zurbaev\PipelineTasks\Events\PipelineTaskFailed;
-use Zurbaev\PipelineTasks\TaskManager;
-use Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatFails\ExampleTaskThatFails;
-use Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\ExampleTaskThatSucceeds;
-use Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\Pipes\FirstPipe;
-use Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\Pipes\SecondPipe;
-use Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\Pipes\ThirdPipe;
+use Naugrim\PipelineTasks\Events\PipelineTaskCompleted;
+use Naugrim\PipelineTasks\Events\PipelineTaskFailed;
+use Naugrim\PipelineTasks\TaskManager;
+use Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatFails\ExampleTaskThatFails;
+use Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\ExampleTaskThatSucceeds;
+use Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\Pipes\FirstPipe;
+use Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\Pipes\SecondPipe;
+use Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\Pipes\ThirdPipe;
 
 class TasksTest extends TestCase
 {

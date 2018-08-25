@@ -1,9 +1,9 @@
 <?php
 
-namespace Zurbaev\PipelineTasks;
+namespace Naugrim\PipelineTasks;
 
 use Illuminate\Contracts\Container\Container;
-use Zurbaev\PipelineTasks\Exceptions\PipelineTaskFailedException;
+use Naugrim\PipelineTasks\Exceptions\PipelineTaskFailedException;
 
 abstract class Pipe
 {

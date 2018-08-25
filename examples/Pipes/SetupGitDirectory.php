@@ -2,7 +2,7 @@
 
 namespace App\Pipes;
 
-use Zurbaev\PipelineTasks\Pipe;
+use Naugrim\PipelineTasks\Pipe;
 
 class SetupGitDirectory extends Pipe
 {

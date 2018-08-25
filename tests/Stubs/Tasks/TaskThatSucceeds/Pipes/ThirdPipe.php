@@ -1,9 +1,9 @@
 <?php
 
-namespace Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\Pipes;
+namespace Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\Pipes;
 
-use Zurbaev\PipelineTasks\Pipe;
-use Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\ExampleTaskThatSucceeds;
+use Naugrim\PipelineTasks\Pipe;
+use Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\ExampleTaskThatSucceeds;
 
 class ThirdPipe extends Pipe
 {

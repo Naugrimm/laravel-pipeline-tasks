@@ -1,8 +1,8 @@
 <?php
 
-namespace Zurbaev\PipelineTasks;
+namespace Naugrim\PipelineTasks;
 
-use Zurbaev\PipelineTasks\Exceptions\PipelineTaskFailedException;
+use Naugrim\PipelineTasks\Exceptions\PipelineTaskFailedException;
 
 abstract class Task
 {
