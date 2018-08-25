@@ -3,7 +3,7 @@
 namespace App\Pipes;
 
 use App\CloneGitRepositoryTask;
-use Zurbaev\PipelineTasks\Pipe;
+use Naugrim\PipelineTasks\Pipe;
 
 class CloneGitRepository extends Pipe
 {

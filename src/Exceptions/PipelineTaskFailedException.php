@@ -1,6 +1,6 @@
 <?php
 
-namespace Zurbaev\PipelineTasks\Exceptions;
+namespace Naugrim\PipelineTasks\Exceptions;
 
 class PipelineTaskFailedException extends \RuntimeException
 {

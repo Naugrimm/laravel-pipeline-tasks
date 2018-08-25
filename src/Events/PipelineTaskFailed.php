@@ -1,9 +1,9 @@
 <?php
 
-namespace Zurbaev\PipelineTasks\Events;
+namespace Naugrim\PipelineTasks\Events;
 
-use Zurbaev\PipelineTasks\Exceptions\PipelineTaskFailedException;
-use Zurbaev\PipelineTasks\Task;
+use Naugrim\PipelineTasks\Exceptions\PipelineTaskFailedException;
+use Naugrim\PipelineTasks\Task;
 
 class PipelineTaskFailed
 {

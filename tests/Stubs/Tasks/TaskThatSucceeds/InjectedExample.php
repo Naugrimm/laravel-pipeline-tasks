@@ -1,6 +1,6 @@
 <?php
 
-namespace Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds;
+namespace Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds;
 
 class InjectedExample
 {

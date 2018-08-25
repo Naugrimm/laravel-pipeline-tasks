@@ -1,6 +1,6 @@
 <?php
 
-namespace Zurbaev\PipelineTasks\Tests;
+namespace Naugrim\PipelineTasks\Tests;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {

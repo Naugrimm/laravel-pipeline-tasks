@@ -1,14 +1,14 @@
 <?php
 
-namespace Zurbaev\PipelineTasks\Facades;
+namespace Naugrim\PipelineTasks\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Zurbaev\PipelineTasks\TaskManager;
+use Naugrim\PipelineTasks\TaskManager;
 
 /**
  * Class PipelineTasks
  *
- * @method static mixed start(\Zurbaev\PipelineTasks\Task $task)
+ * @method static mixed start(\Naugrim\PipelineTasks\Task $task)
  */
 class PipelineTasks extends Facade
 {

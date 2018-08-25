@@ -1,13 +1,13 @@
 <?php
 
-namespace Zurbaev\PipelineTasks;
+namespace Naugrim\PipelineTasks;
 
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Pipeline\Pipeline;
-use Zurbaev\PipelineTasks\Events\PipelineTaskCompleted;
-use Zurbaev\PipelineTasks\Events\PipelineTaskFailed;
-use Zurbaev\PipelineTasks\Exceptions\PipelineTaskFailedException;
+use Naugrim\PipelineTasks\Events\PipelineTaskCompleted;
+use Naugrim\PipelineTasks\Events\PipelineTaskFailed;
+use Naugrim\PipelineTasks\Exceptions\PipelineTaskFailedException;
 
 class TaskManager
 {

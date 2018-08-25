@@ -1,11 +1,11 @@
 <?php
 
-namespace Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatFails;
+namespace Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatFails;
 
-use Zurbaev\PipelineTasks\Exceptions\PipelineTaskFailedException;
-use Zurbaev\PipelineTasks\Task;
-use Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatFails\Pipes\FirstPipe;
-use Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatFails\Pipes\SecondPipe;
+use Naugrim\PipelineTasks\Exceptions\PipelineTaskFailedException;
+use Naugrim\PipelineTasks\Task;
+use Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatFails\Pipes\FirstPipe;
+use Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatFails\Pipes\SecondPipe;
 
 class ExampleTaskThatFails extends Task
 {

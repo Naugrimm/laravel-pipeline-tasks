@@ -1,8 +1,8 @@
 <?php
 
-namespace Zurbaev\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\Pipes;
+namespace Naugrim\PipelineTasks\Tests\Stubs\Tasks\TaskThatSucceeds\Pipes;
 
-use Zurbaev\PipelineTasks\Pipe;
+use Naugrim\PipelineTasks\Pipe;
 
 class FirstPipe extends Pipe
 {
